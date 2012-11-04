@@ -1,0 +1,437 @@
+/* Leilão */
+html, body{
+	background:#D1D1D1;
+	height:100%;
+}
+.page{
+	background:#D1D1D1 url('../img/logoBottom.png') no-repeat 0px 90px;
+	min-height:100%;
+	position:relative;
+}
+* html .page{
+	height: 100%;
+}
+/* Cabeçalho */
+.header{
+	display:block;
+	height:90px;
+	background:#FFFFFF url('../img/bgHeader.jpg') right repeat-y;
+	border-bottom:1px solid #D1D1D1;
+}
+.header #header-logo{
+	float:left;
+	display:block;
+	height:90px;
+	padding-top:0px;
+	background:url('../img/logoTop.png') right bottom no-repeat;
+}
+.header #header-titulo{
+	font-family: "Segoe UI",Verdana,Arial,sans-serif;
+	color:#525252;
+	float:left;
+	display:block;
+	padding-top:10px;
+}
+.header #header-titulo #orgao{
+	font-size:1.3em;
+	font-weight:700;
+}
+.header #header-titulo #sistema{
+	font-size:1.6em;
+}
+.header #header-status{
+	float:right;
+	display:block;
+	height:40px;
+	padding:4px;
+	color:#FFFFFF;
+	font-size:0.9em;
+	text-align:right;
+}
+.header #header-foto{
+	float:right;
+	display:block;
+	height:40px;
+	overflow:hidden;
+	padding:4px;
+}
+
+.header #header-status-sair {
+	color:#EDEDED;
+}
+.header #header-status a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+/* Conteúdo */
+.content{
+	padding:0px 15px 30px 15px;
+}
+.content #content-titulo{
+	padding:22px 0px 4px 35px;
+	font-size:1.5em;
+	font-weight:600;
+}
+.content #content-titulo span{
+	font-size:0.8em;
+	font-weight:normal;
+}
+.content #content-corpo{
+	background-color:#C1C1C1;
+	padding:15px;
+	border:1px solid #949494;
+	-o-border-radius:4px; 
+	-webkit-border-radius:4px; 
+	-moz-border-radius:4px;
+}
+
+/* Rodapé */
+.footer{
+	padding:5px;
+	font-size:0.9em;
+	text-shadow:#333333 1px 1px;
+	filter:dropshadow(color=#333333,offX=1,offY=1);	
+	color:#FFFFFF;
+	background:#716464 url('../img/bgFooter.png') left repeat-y;
+	height:25px;
+	width:99.2%;
+	position:absolute;
+	bottom:0;
+}
+.footer #footer-info{
+	float:left;
+	display:block;
+}
+.footer #footer-prodemge{
+	float:right;
+	display:block;
+	padding-top:5px;	
+}
+
+/* Extensões - Geral */
+a{
+	color:#044995;
+	font-weight:bold;
+}
+a:hover{
+	color:#0674EC;
+	text-decoration:underline;
+}
+
+#menu-wrapper{
+	border:none;
+	margin-top:10px;
+}
+#menu-wrapper a{
+	border:none;
+	font-weight:bold;
+}
+#menu{
+	color:#EFEFEF;
+}
+#menu ul{
+	border:none;
+}
+#menu li{
+	background:none;
+}        
+#menu li > ul li{
+	background:#9C9292;
+}        
+#menu li:hover{
+	background:none;
+}
+#menu .menu-separador{
+	padding-top:5px;
+	margin-right:10px;
+}
+#menu .margem.menu-separador{
+	margin-left:10px;
+}
+#menu #menu-sair{
+	background:url('../img/mi/lock.png') 0 6px no-repeat;
+	font-weight:normal;
+	padding-left:6px;
+}
+#menu:hover li > ul li:hover{
+	background:#BCB2B2;
+}
+/* Extensões - Campo */
+.campo{
+	border:1px solid #FFFFFF;
+	background:#FFFFFF;
+	-o-border-radius:2px; 
+	-webkit-border-radius:2px; 
+	-moz-border-radius:2px;
+	border-radius:2px;
+	
+}
+.campo.select{
+	height:23px;
+	cursor:pointer;
+}
+.campo.checkbox{
+	height:auto;
+	cursor:pointer;
+}
+.campo.radiobutton{
+	height:auto;
+	cursor:pointer;
+}
+/* Revisar botões */
+.botao{
+	-o-border-radius:2px; 
+	-webkit-border-radius:2px; 
+	-moz-border-radius:2px;
+	border-radius:2px;
+	margin:4px;
+	padding:11px 12px 11px 36px;
+	border:none;
+	color:#FFFFFF;
+}
+.botao:hover{
+	background-color:#727272;
+	cursor:pointer;
+}
+.botao.bloqueado, .botao.bloqueado:hover{
+	padding:11px 12px 11px 12px;
+	background-color:#BBBBBB;
+	cursor:not-allowed;
+}
+/* Icones */
+.icone{
+	display:block;
+	width:auto;
+	height:23px;
+	border:1px solid #FFF;
+	background:#FFFFFF;
+	padding:4px;
+	margin:4px;
+	-o-border-radius:2px; 
+	-webkit-border-radius:2px; 
+	-moz-border-radius:2px;
+	border-radius:2px;
+}
+.icone:hover{
+	cursor:pointer;
+}
+
+/* Extras*/
+.negrito{font-weight:bold;}
+.italico{font-style:italic;}
+
+#novo-complemento:hover, #editar-complemento:hover, #remover-associacao:hover{
+	cursor:pointer;
+}
+#remover-associacao img{
+	margin:0px 4px -3px -2px;
+}
+.tabelaGrid th a{
+	color:#FFFFFF;
+}
+.tabelaGrid th a:hover{
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+.tabelaGrid td{
+	background-color:#E9E9E9;
+	text-align:center;
+}
+.pagina{
+	display:block;
+	margin:5px;
+	font-size:0.9em;
+}
+.pagina.esq{
+	float:left;
+}
+.pagina.dir{
+	float:right;
+}
+.rotulo{
+	font-size:1.1em;
+	color:#003399;
+	font-weight:600;
+}
+
+.mensagemModal{
+	width:75%;
+	height:75%;
+	font-size:1.1em;
+	text-align:left;
+	padding:12px 12px 0px 48px;	
+}
+.mensagemModal.alerta{
+	background:#FFFFFF url('../img/ci/aviso.png') 10px 10px no-repeat;
+}
+.mensagemModal.erro{
+	background:#FFFFFF url('../img/ci/erro.png') 10px 10px no-repeat;
+}
+.mensagemModal.info{
+	background:#FFFFFF url('../img/ci/info.png') 10px 10px no-repeat;
+}
+.mensagemModal.ok{
+	background:#FFFFFF url('../img/ci/ok.png') 10px 10px no-repeat;
+}
+.mensagemModal.dica{
+	background:#FFFFFF url('../img/ci/dica.png') 10px 10px no-repeat;
+}
+/* Filtros - Nova versão */
+.filtro{
+	margin-left:10px;
+}
+.filtro div{
+	display:inline-block;
+	margin-bottom:15px;
+}
+.filtro #rotulo{
+	display:inline-block;
+	text-align:right;
+	min-width:10px;	
+}
+.filtro #botoes{
+	margin-left:50px;
+	float:right;
+}
+
+#opcoes{
+	display:block;
+	height:17px;
+	font-size:1.1em;
+	color:#660000;
+	font-weight:normal;
+}
+
+/* Ajuste de foto */
+.foto{
+	height:40px;
+	overflow:hidden;
+}
+/* Formulários - Nova versão */
+.formulario{
+	padding:5px 30px 0 10%;
+}
+.formulario #linha div{
+	display:inline;
+}
+.formulario #linha div#rotulo{
+	display:inline-block;
+	min-width:100px;
+	text-align:right;
+}
+.formulario #linha div#texto,.formulario #bloco div#texto{
+	font-size:1.1em;
+	color:#323232;
+}
+.formulario #linha div#campo span#opcao{
+	height:17px;
+	font-size:1.1em;
+	color:#660000;
+	font-weight:normal;
+}
+.w15 input{width:5%;}
+.w10 input{width:10%;}
+.w20 input{width:20%;}
+.w40 input{width:40%;}
+.w60 input{width:60%;}
+.w80 input{width:80%;}
+.w100 input{width:100%;}
+
+.formulario #linha div#tabela{
+	display:block;
+	width:90%;
+	margin-left:5%;
+}
+.formulario #botoes{
+	text-align:center;
+	margin-top:20px;
+}
+.formulario #botoes input#btSalvar{
+	float:right;
+}
+.formulario #acao-rapida{
+	text-align:left;
+}
+.formulario #acao-rapida input#btSalvar, .formulario #acao-rapida input#btCancelar{
+	float:right;
+}
+.formulario #bloco{
+	background-color:#E7E2E2;
+	padding:5px;
+	margin-bottom:2px;
+	min-height:60px;	
+}
+.formulario #bloco div{
+	display:inline;
+}
+.formulario #linha div#campo input, .formulario #linha div#campo select, .formulario #linha div#campo textarea{max-width:100%;}
+.formulario #bloco div#campo input, .formulario #bloco div#campo select, .formulario #bloco div#campo textarea{width:99%;}
+/* Container principal de notificação - Nova versão */
+.container{
+	margin:10px;
+	padding:15px;
+}
+.icone.chave{
+	background-color:#E7E2E2;
+	border:1px solid #E7E2E2;
+
+}
+.container #container-filtro{	
+}
+.container #container-notificacao{
+	margin-top:10px;
+}
+.container #container-notificacao #item-wrap{
+	padding-left:40px;
+}
+.container #container-notificacao #item-notificacao{
+	background-color:#E7E2E2;
+	padding:5px;
+	margin-bottom:2px;
+	min-height:60px;	
+}
+.container #container-notificacao #item-foto{
+	float:left;
+}
+.container #container-notificacao #item-id{
+	font-size:0.9em;
+	color:#646464;
+	margin:0 0 4px;
+}
+.container #container-notificacao #item-assunto, .container #container-notificacao #item-conteudo{
+	font-size:1.1em;
+	margin:3px 2px 5px;	
+}
+.container #container-notificacao #item-resposta{
+	font-size:1.1em;
+	margin:3px 2px 5px;	
+	color:#525252;
+}
+.container #container-notificacao #item-assunto{color:#484848;}
+.container #container-notificacao #item-assunto span.italico, .container #container-notificacao #item-resposta span.italico{color:#999999;}
+.container #container-notificacao #item-info{
+	font-size:0.8em;
+	margin:3px 2px 5px;	
+	color:#525252;
+}
+.container #container-notificacao #item-acao{
+	float:right;
+}
+.container #container-paginar{
+}
+
+/* Adicionais*/
+#separador{
+	padding:22px 0px 4px 35px;
+	font-size:1.2em;
+	font-weight:600;
+}
+.bemVindo{
+	font-size:1.4em;
+	font-weight:lighter;
+	padding:30px 15% 0px 15%;
+}
+.bemVindo img{
+	float:right;
+	margin:8px;
+}
